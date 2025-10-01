@@ -32,23 +32,24 @@ This list focuses on tools and workflows where AI plays a central role in the de
 ## Web-Based Builders
 
 * [Bolt.new](https://bolt.new/) — Rapidly prototype and launch web and mobile apps by prompting.
-* [Lovable](https://lovable.dev/) — Full-stack applications from simple ideas.
-* [Vercel’s v0](https://v0.dev/chat) — Helps design and implement UIs from natural language.
 * [Capacity](https://capacity.so/) — Create production-ready web apps in minutes.
 * [CHAI.new](https://chai.new) — Code and deploy AI agents with prompts.
-* [Replit](https://replit.com/) — Type what you want and let the AI construct it.
-* [Create](https://www.create.xyz/) — Converts text prompts into usable tools or websites.
-* [Trickle](https://www.trickle.so/) — AI-based visual builder for websites and apps.
-* [Tempo](https://www.tempo.new/) — Build React projects much faster through AI assistance.
-* [Softgen](https://softgen.ai/) — Describe a concept and generate a working full-stack app.
-* [Lazy AI](https://getlazy.ai/) — Enterprise-focused prompt-based application builder.
-* [HeyBoss](https://www.heyboss.xyz/) — Generate functional websites quickly.
 * [Creatr](https://getcreatr.com/) — Build landing pages and simple apps instantly.
-* [Rork](https://rork.app/) — A tool focused on generating mobile apps.
+* [Create](https://www.create.xyz/) — Converts text prompts into usable tools or websites.
 * [Firebase Studio](https://studio.firebase.google.com/) — Google's take on agent-driven full-stack development.
-* [Napkins](https://www.napkins.dev/) — Converts mockups or screenshots into working code.
 * [HeroUI Chat](https://heroui.chat/) — Build interfaces without design expertise.
+* [HeyBoss](https://www.heyboss.xyz/) — Generate functional websites quickly.
+* [Lazy AI](https://getlazy.ai/) — Enterprise-focused prompt-based application builder.
+* [Lovable](https://lovable.dev/) — Full-stack applications from simple ideas.
+* [Napkins](https://www.napkins.dev/) — Converts mockups or screenshots into working code.
+* [Replit](https://replit.com/) — Type what you want and let the AI construct it.
 * [Rocket.new](https://www.rocket.new/) — Low-code experience for shipping apps.
+* [Rork](https://rork.app/) — A tool focused on generating mobile apps.
+* [Shakespeare](https://shakespeare.diy/) — Build a social website for your community with a simple conversation.
+* [Softgen](https://softgen.ai/) — Describe a concept and generate a working full-stack app.
+* [Tempo](https://www.tempo.new/) — Build React projects much faster through AI assistance.
+* [Trickle](https://www.trickle.so/) — AI-based visual builder for websites and apps.
+* [Vercel’s v0](https://v0.dev/chat) — Helps design and implement UIs from natural language.
 
 ---
 
