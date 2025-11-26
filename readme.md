@@ -69,6 +69,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 
 ## Extensions & Plugins
 
+* [dbForge AI Assistant](https://www.devart.com/dbforge/ai-assistant/) - Integrated AI tool that generates, optimizes, explains, and fixes SQL queries. 
 * [Cline](https://cline.bot/) — Connects to your CLI and editor, interprets natural commands.
 * [Roo Code](https://github.com/RooVetGit/Roo-Code) — An enhanced version of Cline.
 * [avante.nvim](https://github.com/yetone/avante.nvim) — Neovim integration modeled after Cursor’s AI features.
