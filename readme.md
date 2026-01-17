@@ -86,6 +86,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 ## Desktop & Local Apps
 
 * [Dyad](https://www.dyad.sh/) — A lightweight, local platform for creating AI-driven apps without depending on the cloud.
+* [OpenWork](https://openwork.software/) — Desktop GUI for OpenCode with sessions, skills, plugins, and templates in one place.
 
 ---
 
