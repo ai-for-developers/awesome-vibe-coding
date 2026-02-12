@@ -132,6 +132,10 @@ This list focuses on tools and workflows where AI plays a central role in the de
 
 ---
 
+## Related Lists
+
+- [awesome-vibe-coding by Taskade](https://github.com/taskade/awesome-vibe-coding) - A curated list of 245+ vibe coding tools, platforms, and resources organized by category with pricing, use cases, tutorials, and communities.
+
 ## Contributing
 
 Found something interesting or built your own tool? Contributions are encouraged—see the [contribution guide](CONTRIBUTING.md) for details.
