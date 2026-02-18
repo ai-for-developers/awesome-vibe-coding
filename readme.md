@@ -136,3 +136,4 @@ This list focuses on tools and workflows where AI plays a central role in the de
 
 Found something interesting or built your own tool? Contributions are encouraged—see the [contribution guide](CONTRIBUTING.md) for details.
 
+- [Mysti](https://github.com/DeepMyst/Mysti) - Multi-agent AI coding assistant for VS Code with brainstorm mode. Supports Claude Code, Codex, Gemini, Cline, and GitHub Copilot.
