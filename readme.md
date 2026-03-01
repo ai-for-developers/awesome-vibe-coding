@@ -99,6 +99,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [CodeSelect](https://github.com/maynetee/codeselect) — Sends structured source context to LLMs.
 * [OpenAI Codex CLI](https://github.com/openai/codex) — Experimental terminal assistant.
 * [Gemini CLI](https://github.com/google-gemini/gemini-cli) — Terminal assistant built around Google Gemini.
+* [OpenPaw](https://github.com/daxaur/openpaw) — Turns Claude Code into a personal assistant with 38 skills for email, calendar, Spotify, smart home, and more.
 
 ---
 
