@@ -112,6 +112,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 ## Project Documentation
 
 * [CodeGuide](https://www.codeguide.dev/) — Tool that builds documentation for AI-built projects.
+* [LynxPrompt](https://github.com/GeiserX/LynxPrompt) — Self-hostable AI config management platform for teams. Manages AGENTS.md, CLAUDE.md, .cursor/rules/, slash commands, and 30+ formats.
 
 ---
 
