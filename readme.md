@@ -99,6 +99,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [CodeSelect](https://github.com/maynetee/codeselect) — Sends structured source context to LLMs.
 * [OpenAI Codex CLI](https://github.com/openai/codex) — Experimental terminal assistant.
 * [Gemini CLI](https://github.com/google-gemini/gemini-cli) — Terminal assistant built around Google Gemini.
+* [VibeGrid](https://github.com/jcanizalez/vibegrid) — Multi-agent terminal manager with task queues, workflow automation, and inline diff review.
 
 ---
 
