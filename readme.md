@@ -106,6 +106,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 
 * [Boomerang Tasks](https://docs.roocode.com/features/boomerang-tasks) — Automatically turns big ideas into task queues.
 * [Claude Task Master](https://github.com/eyaltoledano/claude-task-master) — Compatible with popular AI IDEs, breaks down work into subtasks.
+* [agent-hub](https://github.com/Dominic789654/agent-hub) — Local-first multitask board for routing, sequencing, and observing repo-local coding agents across projects.
 
 ---
 
@@ -135,4 +136,3 @@ This list focuses on tools and workflows where AI plays a central role in the de
 ## Contributing
 
 Found something interesting or built your own tool? Contributions are encouraged—see the [contribution guide](CONTRIBUTING.md) for details.
-
