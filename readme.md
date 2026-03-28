@@ -18,6 +18,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [Desktop & Local Apps](#desktop--local-apps)
 * [CLI Tools](#cli-tools)
 * [AI-Driven Task Management](#ai-driven-task-management)
+* [Monitoring & Cost Tracking](#monitoring--cost-tracking)
 * [Project Documentation](#project-documentation)
 * [Articles & Updates](#articles--updates)
 * [Contributing](#contributing)
@@ -106,6 +107,12 @@ This list focuses on tools and workflows where AI plays a central role in the de
 
 * [Boomerang Tasks](https://docs.roocode.com/features/boomerang-tasks) — Automatically turns big ideas into task queues.
 * [Claude Task Master](https://github.com/eyaltoledano/claude-task-master) — Compatible with popular AI IDEs, breaks down work into subtasks.
+
+---
+
+## Monitoring & Cost Tracking
+
+* [Budi](https://github.com/siropkin/budi) — Local-first cost analytics for AI coding agents. Tracks token usage and spend across Claude Code and Cursor.
 
 ---
 
