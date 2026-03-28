@@ -80,6 +80,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [GitHub Copilot](https://github.com/features/copilot) — Integrated assistant offering code suggestions, chats, and context-aware actions.
 * [Amazon Q](https://aws.amazon.com/q/developer) — AWS’s generative AI solution for developers.
 * [Superdesign](https://www.superdesign.dev/) — AI design agent for fast UI iterations.
+* [claude-dash](https://github.com/krabat-l/claude-dash) — Real-time statusline for Claude Code showing context, cost, quota, cache, tools, and git status.
 
 ---
 
