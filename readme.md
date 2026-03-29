@@ -20,6 +20,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [AI-Driven Task Management](#ai-driven-task-management)
 * [Project Documentation](#project-documentation)
 * [Articles & Updates](#articles--updates)
+* [Real-World Applications](#real-world-applications)
 * [Contributing](#contributing)
 
 ---
@@ -129,6 +130,13 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [NYTimes: Personal Vibe Coding Experience](https://www.nytimes.com/2025/02/27/technology/personaltech/vibecoding-ai-software-programming.html)
 * [Reddit: /r/vibecoding](https://www.reddit.com/r/vibecoding/)
 * [Reddit: /r/ChatGPTCoding](https://www.reddit.com/r/ChatGPTCoding/)
+
+---
+
+## Real-World Applications
+
+* [Hi-Commerce Vibe Coding E-commerce](https://www.hi-commerce.fr/vibe-coding-ecommerce/) — Using AI-assisted development to build e-commerce stores: product pages, checkout flows, and SEO features without a traditional dev team. (French)
+* [Vibe Coding for E-commerce (EN)](https://www.hi-commerce.fr/vibe-coding-ecommerce-en/) — English guide covering the full workflow from idea to live store using vibe coding tools and AI agents.
 
 ---
 
