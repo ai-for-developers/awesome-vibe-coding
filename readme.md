@@ -112,6 +112,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 ## Project Documentation
 
 * [CodeGuide](https://www.codeguide.dev/) — Tool that builds documentation for AI-built projects.
+* [Claude Code Mastery](https://github.com/ShipWithAI/claude-code-mastery) — Structured course for mastering Claude Code workflows, including security, automation, and multi-agent patterns.
 
 ---
 
