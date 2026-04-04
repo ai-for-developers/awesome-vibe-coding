@@ -71,6 +71,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 
 ## Extensions & Plugins
 
+* [AgentLint](https://github.com/0xmariowu/AgentLint) — 33 evidence-backed checks for AI-friendly repos — file structure, instruction quality, build setup, session continuity, security posture. Claude Code plugin.
 * [Cline](https://cline.bot/) — Connects to your CLI and editor, interprets natural commands.
 * [Roo Code](https://github.com/RooVetGit/Roo-Code) — An enhanced version of Cline.
 * [avante.nvim](https://github.com/yetone/avante.nvim) — Neovim integration modeled after Cursor’s AI features.
