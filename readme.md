@@ -2,6 +2,7 @@
 
 > A hand-picked collection of tools and references for building software with the help of AI—through prompts, iterations, and exploration.
 
+- [guardian-agent-prompts](https://github.com/milkomida77/guardian-agent-prompts) - 49 production-tested AI agent system prompts for Claude Code with automated task delegation, quality gates, and multi-agent coordination. MIT licensed.
 ## Overview
 
 This list focuses on tools and workflows where AI plays a central role in the development process. Instead of traditional coding, this approach emphasizes describing ideas, iterating quickly, and trusting the process—even when you’re not sure where it’s headed.
