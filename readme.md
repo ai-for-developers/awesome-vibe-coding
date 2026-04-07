@@ -8,6 +8,15 @@ This list focuses on tools and workflows where AI plays a central role in the de
 
 *You can find a searchable, more detailed list on [AI For Developers](https://aifordevelopers.org)*
 
+
+----
+
+ **Reach thousands of developers building with AI by sponsoring this list, our [newsletter](https://aifordevelopers.substack.com/) and [AI For Developers](https://aifordevelopers.org/). Contact us at [aifordevelopers.org/advertise](https://aifordevelopers.org/advertise)**
+
+----
+
+
+
 ## Table of Contents
 
 * [What is](#what-is)
