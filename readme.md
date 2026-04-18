@@ -6,6 +6,17 @@
 
 This list focuses on tools and workflows where AI plays a central role in the development process. Instead of traditional coding, this approach emphasizes describing ideas, iterating quickly, and trusting the process—even when you’re not sure where it’s headed.
 
+*You can find a searchable, more detailed list on [AI For Developers](https://aifordevelopers.org)*
+
+
+----
+
+ **Reach thousands of developers building with AI by sponsoring this list, our [newsletter](https://aifordevelopers.substack.com/) and [AI For Developers](https://aifordevelopers.org/). Contact us at [aifordevelopers.org/advertise](https://aifordevelopers.org/advertise)**
+
+----
+
+
+
 ## Table of Contents
 
 * [What is](#what-is)
@@ -49,6 +60,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [Napkins](https://www.napkins.dev/) — Converts mockups or screenshots into working code.
 * [HeroUI Chat](https://heroui.chat/) — Build interfaces without design expertise.
 * [Rocket.new](https://www.rocket.new/) — Low-code experience for shipping apps.
+* [embedible.io](https://embedible.io/) - AI that transforms your electronics ideas into working projects.
 
 ---
 
@@ -78,6 +90,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [GitHub Copilot](https://github.com/features/copilot) — Integrated assistant offering code suggestions, chats, and context-aware actions.
 * [Amazon Q](https://aws.amazon.com/q/developer) — AWS’s generative AI solution for developers.
 * [Superdesign](https://www.superdesign.dev/) — AI design agent for fast UI iterations.
+* [toprank](https://github.com/nowork-studio/toprank) — Open-source Claude Code plugin with 9 SEO and Google Ads skills. Connects Google Search Console, PageSpeed Insights, and Google Ads API; ships meta tag and schema markup fixes to WordPress/Strapi/Contentful/Ghost. MIT, 107⭐.
 * [dbForge AI Assistant](https://www.devart.com/dbforge/ai-assistant/) - Integrated AI tool that generates, optimizes, explains, and fixes SQL queries. 
 
 ---
