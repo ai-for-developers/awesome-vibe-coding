@@ -60,6 +60,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [Napkins](https://www.napkins.dev/) — Converts mockups or screenshots into working code.
 * [HeroUI Chat](https://heroui.chat/) — Build interfaces without design expertise.
 * [Rocket.new](https://www.rocket.new/) — Low-code experience for shipping apps.
+* [embedible.io](https://embedible.io/) - AI that transforms your electronics ideas into working projects.
 
 ---
 
