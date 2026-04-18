@@ -95,6 +95,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [toprank](https://github.com/nowork-studio/toprank) — Open-source Claude Code plugin with 9 SEO and Google Ads skills. Connects Google Search Console, PageSpeed Insights, and Google Ads API; ships meta tag and schema markup fixes to WordPress/Strapi/Contentful/Ghost. MIT, 107⭐.
 * [dbForge AI Assistant](https://www.devart.com/dbforge/ai-assistant/) - Integrated AI tool that generates, optimizes, explains, and fixes SQL queries. 
 * [Frontman](https://github.com/frontman-ai/frontman) — Open-source AI agent that lives in your browser — click any element, describe changes in plain English, and get real code edits with hot reload. Works with Next.js, Vite, and Astro.
+* [Mysti](https://github.com/DeepMyst/Mysti) - Multi-agent AI coding assistant for VS Code with brainstorm mode. Supports Claude Code, Codex, Gemini, Cline, and GitHub Copilot.
 
 ---
 
