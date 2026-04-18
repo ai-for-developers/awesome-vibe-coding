@@ -8,6 +8,15 @@ This list focuses on tools and workflows where AI plays a central role in the de
 
 *You can find a searchable, more detailed list on [AI For Developers](https://aifordevelopers.org)*
 
+
+----
+
+ **Reach thousands of developers building with AI by sponsoring this list, our [newsletter](https://aifordevelopers.substack.com/) and [AI For Developers](https://aifordevelopers.org/). Contact us at [aifordevelopers.org/advertise](https://aifordevelopers.org/advertise)**
+
+----
+
+
+
 ## Table of Contents
 
 * [What is](#what-is)
@@ -51,6 +60,9 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [Napkins](https://www.napkins.dev/) — Converts mockups or screenshots into working code.
 * [HeroUI Chat](https://heroui.chat/) — Build interfaces without design expertise.
 * [Rocket.new](https://www.rocket.new/) — Low-code experience for shipping apps.
+* [embedible.io](https://embedible.io/) - AI that transforms your electronics ideas into working projects.
+* [FlyPloy](https://flyploy.com/en) — A modern application deployment platform that simplifies global delivery with one-click deploys, Docker, and Kubernetes support. Ideal for launching AI-assisted applications in seconds.
+* [MyVibe](https://myvibe.so/) — Instant deployment for AI-generated web apps. Publish via Claude Code skills or direct upload.
 
 ---
 
@@ -80,6 +92,10 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [GitHub Copilot](https://github.com/features/copilot) — Integrated assistant offering code suggestions, chats, and context-aware actions.
 * [Amazon Q](https://aws.amazon.com/q/developer) — AWS’s generative AI solution for developers.
 * [Superdesign](https://www.superdesign.dev/) — AI design agent for fast UI iterations.
+* [toprank](https://github.com/nowork-studio/toprank) — Open-source Claude Code plugin with 9 SEO and Google Ads skills. Connects Google Search Console, PageSpeed Insights, and Google Ads API; ships meta tag and schema markup fixes to WordPress/Strapi/Contentful/Ghost. MIT, 107⭐.
+* [dbForge AI Assistant](https://www.devart.com/dbforge/ai-assistant/) - Integrated AI tool that generates, optimizes, explains, and fixes SQL queries. 
+* [Frontman](https://github.com/frontman-ai/frontman) — Open-source AI agent that lives in your browser — click any element, describe changes in plain English, and get real code edits with hot reload. Works with Next.js, Vite, and Astro.
+* [Mysti](https://github.com/DeepMyst/Mysti) - Multi-agent AI coding assistant for VS Code with brainstorm mode. Supports Claude Code, Codex, Gemini, Cline, and GitHub Copilot.
 
 ---
 
@@ -92,6 +108,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 ## CLI Tools
 
 * [claude-code](https://github.com/anthropics/claude-code) — Works across codebases, provides explanations, automates tasks.
+* [memov](https://github.com/memovai/memov) — Git-based, traceable memory layer for Claude Code.
 * [aider](https://aider.chat/) — Code side-by-side with AI from your terminal.
 * [Goose](https://block.github.io/goose/) — Local agent framework compatible with multiple models.
 * [MyCoder.ai](https://github.com/drivecore/mycoder) — Modular agent with GitHub integration.
@@ -99,6 +116,8 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [CodeSelect](https://github.com/maynetee/codeselect) — Sends structured source context to LLMs.
 * [OpenAI Codex CLI](https://github.com/openai/codex) — Experimental terminal assistant.
 * [Gemini CLI](https://github.com/google-gemini/gemini-cli) — Terminal assistant built around Google Gemini.
+* [ReviewCerberus](https://github.com/Kirill89/reviewcerberus) - Open-source AI code review tool for analyzing git branch differences with comprehensive security, performance, and quality analysis.
+* [OpenPaw](https://github.com/daxaur/openpaw) — Turns Claude Code into a personal assistant with 38 skills for email, calendar, Spotify, smart home, and more.
 * [Autohand Code CLI](https://github.com/autohandai/code-cli) — Self-evolving autonomous coding agent for the terminal with 40+ tools, multi-LLM support, and a modular skills system.
 
 ---
@@ -128,12 +147,13 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [Ars Technica on AI Development Futures](https://arstechnica.com/ai/2025/03/is-vibe-coding-with-ai-gnarly-or-reckless-maybe-some-of-both/)
 * [The New Stack – Everyone Can Program](https://thenewstack.io/vibe-coding-where-everyone-can-speak-computer-programming/)
 * [NYTimes: Personal Vibe Coding Experience](https://www.nytimes.com/2025/02/27/technology/personaltech/vibecoding-ai-software-programming.html)
+* [CodingButVibes – What Is Vibe Coding](https://www.codingbutvibes.com/what-is-vibe-coding) — Practical breakdown of the vibe coding approach, with tool comparisons and real developer workflows.
 * [Reddit: /r/vibecoding](https://www.reddit.com/r/vibecoding/)
 * [Reddit: /r/ChatGPTCoding](https://www.reddit.com/r/ChatGPTCoding/)
+* [Vibe Engineering](https://www.manning.com/books/vibe-engineering)
 
 ---
 
 ## Contributing
 
 Found something interesting or built your own tool? Contributions are encouraged—see the [contribution guide](CONTRIBUTING.md) for details.
-
