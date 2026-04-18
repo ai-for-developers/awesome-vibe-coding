@@ -99,6 +99,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [dbForge AI Assistant](https://www.devart.com/dbforge/ai-assistant/) - Integrated AI tool that generates, optimizes, explains, and fixes SQL queries. 
 * [Frontman](https://github.com/frontman-ai/frontman) — Open-source AI agent that lives in your browser — click any element, describe changes in plain English, and get real code edits with hot reload. Works with Next.js, Vite, and Astro.
 * [Mysti](https://github.com/DeepMyst/Mysti) - Multi-agent AI coding assistant for VS Code with brainstorm mode. Supports Claude Code, Codex, Gemini, Cline, and GitHub Copilot.
+* [AgentLint](https://github.com/0xmariowu/AgentLint) — 33 evidence-backed checks for AI-friendly repos — file structure, instruction quality, build setup, session continuity, security posture. Claude Code plugin.
 
 ---
 
