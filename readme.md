@@ -62,6 +62,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [Rocket.new](https://www.rocket.new/) — Low-code experience for shipping apps.
 * [embedible.io](https://embedible.io/) - AI that transforms your electronics ideas into working projects.
 * [FlyPloy](https://flyploy.com/en) — A modern application deployment platform that simplifies global delivery with one-click deploys, Docker, and Kubernetes support. Ideal for launching AI-assisted applications in seconds.
+* [MyVibe](https://myvibe.so/) — Instant deployment for AI-generated web apps. Publish via Claude Code skills or direct upload.
 
 ---
 
