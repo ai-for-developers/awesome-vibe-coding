@@ -28,6 +28,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [CLI Tools](#cli-tools)
 * [AI-Driven Task Management](#ai-driven-task-management)
 * [Project Documentation](#project-documentation)
+* [Projects Built with Vibe Coding](#projects-built-with-vibe-coding)
 * [Articles & Updates](#articles--updates)
 * [Contributing](#contributing)
 
@@ -124,6 +125,12 @@ This list focuses on tools and workflows where AI plays a central role in the de
 ## Project Documentation
 
 * [CodeGuide](https://www.codeguide.dev/) — Tool that builds documentation for AI-built projects.
+
+---
+
+## Projects Built with Vibe Coding
+
+* [dna-claude-analysis](https://github.com/shmlkv/dna-claude-analysis) — Personal genome analysis toolkit built entirely through conversation with Claude Code.
 
 ---
 
