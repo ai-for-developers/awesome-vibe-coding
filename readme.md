@@ -118,6 +118,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [Gemini CLI](https://github.com/google-gemini/gemini-cli) — Terminal assistant built around Google Gemini.
 * [ReviewCerberus](https://github.com/Kirill89/reviewcerberus) - Open-source AI code review tool for analyzing git branch differences with comprehensive security, performance, and quality analysis.
 * [OpenPaw](https://github.com/daxaur/openpaw) — Turns Claude Code into a personal assistant with 38 skills for email, calendar, Spotify, smart home, and more.
+* [Autohand Code CLI](https://github.com/autohandai/code-cli) — Self-evolving autonomous coding agent for the terminal with 40+ tools, multi-LLM support, and a modular skills system.
 
 ---
 
