@@ -145,6 +145,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [Ars Technica on AI Development Futures](https://arstechnica.com/ai/2025/03/is-vibe-coding-with-ai-gnarly-or-reckless-maybe-some-of-both/)
 * [The New Stack – Everyone Can Program](https://thenewstack.io/vibe-coding-where-everyone-can-speak-computer-programming/)
 * [NYTimes: Personal Vibe Coding Experience](https://www.nytimes.com/2025/02/27/technology/personaltech/vibecoding-ai-software-programming.html)
+* [CodingButVibes – What Is Vibe Coding](https://www.codingbutvibes.com/what-is-vibe-coding) — Practical breakdown of the vibe coding approach, with tool comparisons and real developer workflows.
 * [Reddit: /r/vibecoding](https://www.reddit.com/r/vibecoding/)
 * [Reddit: /r/ChatGPTCoding](https://www.reddit.com/r/ChatGPTCoding/)
 * [Vibe Engineering](https://www.manning.com/books/vibe-engineering)
