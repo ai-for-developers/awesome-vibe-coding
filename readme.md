@@ -104,6 +104,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 ## CLI Tools
 
 * [claude-code](https://github.com/anthropics/claude-code) — Works across codebases, provides explanations, automates tasks.
+* [memov](https://github.com/memovai/memov) — Git-based, traceable memory layer for Claude Code.
 * [aider](https://aider.chat/) — Code side-by-side with AI from your terminal.
 * [Goose](https://block.github.io/goose/) — Local agent framework compatible with multiple models.
 * [MyCoder.ai](https://github.com/drivecore/mycoder) — Modular agent with GitHub integration.
@@ -149,4 +150,3 @@ This list focuses on tools and workflows where AI plays a central role in the de
 ## Contributing
 
 Found something interesting or built your own tool? Contributions are encouraged—see the [contribution guide](CONTRIBUTING.md) for details.
-
