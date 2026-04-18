@@ -127,6 +127,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [Autohand Code CLI](https://github.com/autohandai/code-cli) — Self-evolving autonomous coding agent for the terminal with 40+ tools, multi-LLM support, and a modular skills system.
 * [Bernstein](https://github.com/chernistry/bernstein) — Deterministic orchestrator for vibe coding at scale. Spawns parallel AI coding agents from a single goal, verifies with tests, auto-commits.
 * [sober-coding](https://github.com/voidborne-d/sober-coding) — Vibe code quality analyzer. 27 checks across security, architecture, duplication, error handling, dependencies, testing, and dead code. Language-agnostic with fix suggestions and CI mode.
+* [VibeGrid](https://github.com/jcanizalez/vibegrid) — Multi-agent terminal manager with task queues, workflow automation, and inline diff review.
 
 ---
 
