@@ -93,13 +93,13 @@ This list focuses on tools and workflows where AI plays a central role in the de
 
 * [claude-code](https://github.com/anthropics/claude-code) — Works across codebases, provides explanations, automates tasks.
 * [aider](https://aider.chat/) — Code side-by-side with AI from your terminal.
-* [Autohand Code CLI](https://github.com/autohandai/code-cli) — Self-evolving autonomous coding agent for the terminal with 40+ tools, multi-LLM support, and a modular skills system.
 * [Goose](https://block.github.io/goose/) — Local agent framework compatible with multiple models.
 * [MyCoder.ai](https://github.com/drivecore/mycoder) — Modular agent with GitHub integration.
 * [RA.Aid](https://github.com/ai-christianson/RA.Aid) — Task-based AI built with LangGraph.
 * [CodeSelect](https://github.com/maynetee/codeselect) — Sends structured source context to LLMs.
 * [OpenAI Codex CLI](https://github.com/openai/codex) — Experimental terminal assistant.
 * [Gemini CLI](https://github.com/google-gemini/gemini-cli) — Terminal assistant built around Google Gemini.
+* [Autohand Code CLI](https://github.com/autohandai/code-cli) — Self-evolving autonomous coding agent for the terminal with 40+ tools, multi-LLM support, and a modular skills system.
 
 ---
 
