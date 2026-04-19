@@ -108,6 +108,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 
 * [Dyad](https://www.dyad.sh/) — A lightweight, local platform for creating AI-driven apps without depending on the cloud.
 * [ClaudeCode Launchpad CLI](https://github.com/noambrand/kivun-terminal) — Windows & macOS installer and launcher for Claude Code. 2-minute setup: auto-installs Node.js, Git & Claude Code; adds a live two-line status bar (model, context %, usage limits), desktop shortcut with folder picker, and right-click "Open with ClaudeCode Launchpad CLI" context menu on Windows folders.
+* [DictatorFlow](https://dictatorflow.com) — Voice dictation and voice-command editing. Select text and speak commands to rewrite, fix code, translate, or summarize.
 
 ---
 
@@ -128,6 +129,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [Bernstein](https://github.com/chernistry/bernstein) — Deterministic orchestrator for vibe coding at scale. Spawns parallel AI coding agents from a single goal, verifies with tests, auto-commits.
 * [sober-coding](https://github.com/voidborne-d/sober-coding) — Vibe code quality analyzer. 27 checks across security, architecture, duplication, error handling, dependencies, testing, and dead code. Language-agnostic with fix suggestions and CI mode.
 * [VibeGrid](https://github.com/jcanizalez/vibegrid) — Multi-agent terminal manager with task queues, workflow automation, and inline diff review.
+* [Codex Infinity](https://codex-infinity.com) — Autonomous coding agent on bare metal VPS. Run Claude Max or OpenAI Codex plans with full root access and no cloud timeouts.
 
 ---
 
