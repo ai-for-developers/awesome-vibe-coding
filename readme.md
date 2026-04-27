@@ -117,6 +117,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [memov](https://github.com/memovai/memov) — Git-based, traceable memory layer for Claude Code.
 * [aider](https://aider.chat/) — Code side-by-side with AI from your terminal.
 * [Goose](https://block.github.io/goose/) — Local agent framework compatible with multiple models.
+* [KubeStellar Console](https://github.com/kubestellar/console) — Multi-cluster Kubernetes dashboard with AI-powered operations. The kc-agent MCP server bridges coding agents to kubeconfig and Kubernetes APIs for vibe-coding infrastructure management.
 * [MyCoder.ai](https://github.com/drivecore/mycoder) — Modular agent with GitHub integration.
 * [RA.Aid](https://github.com/ai-christianson/RA.Aid) — Task-based AI built with LangGraph.
 * [CodeSelect](https://github.com/maynetee/codeselect) — Sends structured source context to LLMs.
