@@ -175,3 +175,4 @@ This list focuses on tools and workflows where AI plays a central role in the de
 ## Contributing
 
 Found something interesting or built your own tool? Contributions are encouraged—see the [contribution guide](CONTRIBUTING.md) for details.
+- [OpenClaw Monitor](https://github.com/flik2002/openclaw-monitor-frontend) - AI monitoring dashboard for AI agents and LLMs. [Demo](https://flik2002.github.io/openclaw-monitor-frontend)
