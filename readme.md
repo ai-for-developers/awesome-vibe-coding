@@ -142,6 +142,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 ## Monitoring & Cost Tracking
 
 * [Budi](https://github.com/siropkin/budi) — Local-first cost analytics for AI coding agents. Tracks token usage and spend across Claude Code and Cursor.
+* [agenttrace](https://github.com/luoyuctl/agenttrace) — Terminal TUI for observing AI coding agent sessions. Tracks cost, tokens, tool failures, latency, anomalies, health gates, diffs, and shareable reports across Claude Code, Codex CLI, Gemini CLI, Aider, Cursor exports, and more.
 
 ---
 
