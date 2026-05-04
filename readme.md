@@ -128,6 +128,8 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [Bernstein](https://github.com/chernistry/bernstein) — Deterministic orchestrator for vibe coding at scale. Spawns parallel AI coding agents from a single goal, verifies with tests, auto-commits.
 * [sober-coding](https://github.com/voidborne-d/sober-coding) — Vibe code quality analyzer. 27 checks across security, architecture, duplication, error handling, dependencies, testing, and dead code. Language-agnostic with fix suggestions and CI mode.
 * [VibeGrid](https://github.com/jcanizalez/vibegrid) — Multi-agent terminal manager with task queues, workflow automation, and inline diff review.
+* [SwarmClaw](https://github.com/swarmclawai/swarmclaw) — Self-hosted multi-agent runtime that delegates to Claude Code, Codex, Gemini CLI, OpenCode, Copilot CLI, Cursor Agent, Goose, Qwen Code, and Droid. Org chart view, schedules, runtime skills, persistent memory, MCP-native. Electron desktop app, CLI, and Docker.
+* [SwarmVault](https://github.com/swarmclawai/swarmvault) — Local-first RAG knowledge vault and MCP server. Compiles raw sources (notes, transcripts, exports, docs, code) into a durable markdown wiki with a knowledge graph and hybrid SQLite FTS plus embeddings. Cuts token usage by serving compact wiki summaries instead of raw files via `npx -y @swarmvaultai/cli mcp`.
 
 ---
 
