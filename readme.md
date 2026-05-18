@@ -121,6 +121,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [RA.Aid](https://github.com/ai-christianson/RA.Aid) — Task-based AI built with LangGraph.
 * [CodeSelect](https://github.com/maynetee/codeselect) — Sends structured source context to LLMs.
 * [OpenAI Codex CLI](https://github.com/openai/codex) — Experimental terminal assistant.
+* [Everything OpenAI Codex](https://github.com/mturac/everything-openai-codex) — Open-source Codex workflow system with agents, skills, commands, hooks, memory patterns, install profiles, and validation checks.
 * [Gemini CLI](https://github.com/google-gemini/gemini-cli) — Terminal assistant built around Google Gemini.
 * [ReviewCerberus](https://github.com/Kirill89/reviewcerberus) - Open-source AI code review tool for analyzing git branch differences with comprehensive security, performance, and quality analysis.
 * [OpenPaw](https://github.com/daxaur/openpaw) — Turns Claude Code into a personal assistant with 38 skills for email, calendar, Spotify, smart home, and more.
