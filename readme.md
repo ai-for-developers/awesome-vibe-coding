@@ -57,6 +57,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [HeyBoss](https://www.heyboss.xyz/) — Generate functional websites quickly.
 * [Creatr](https://getcreatr.com/) — Build landing pages and simple apps instantly.
 * [Rork](https://rork.app/) — A tool focused on generating mobile apps.
+* [Primio](https://primio.dev/) — Chat-based builder that turns prompts into full Flutter apps for mobile and web, with live preview, an in-browser emulator, and one-click publishing to the app stores.
 * [Firebase Studio](https://studio.firebase.google.com/) — Google's take on agent-driven full-stack development.
 * [Napkins](https://www.napkins.dev/) — Converts mockups or screenshots into working code.
 * [HeroUI Chat](https://heroui.chat/) — Build interfaces without design expertise.
