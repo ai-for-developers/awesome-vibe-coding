@@ -43,6 +43,9 @@ This list focuses on tools and workflows where AI plays a central role in the de
 
 ## Web-Based Builders
 
+* [BuilderStudio](https://builderstudio.dev) - Native macOS agentic coding workspace from WunderCorp for secure local/cloud AI development, reusable Skills and Pathways, MCP integrations, Hermes-powered container-only execution, Agentic Swarms for parallel specialized agents, app previews, terminal workflows, packaging/deployment, and flexible routing across 380+ AI models.
+
+
 * [Bolt.new](https://bolt.new/) — Rapidly prototype and launch web and mobile apps by prompting.
 * [Lovable](https://lovable.dev/) — Full-stack applications from simple ideas.
 * [Vercel’s v0](https://v0.dev/chat) — Helps design and implement UIs from natural language.
