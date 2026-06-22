@@ -28,6 +28,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [CLI Tools](#cli-tools)
 * [AI-Driven Task Management](#ai-driven-task-management)
 * [Monitoring & Cost Tracking](#monitoring--cost-tracking)
+* [Security](#security)
 * [Project Documentation](#project-documentation)
 * [Articles & Updates](#articles--updates)
 * [Contributing](#contributing)
@@ -142,6 +143,16 @@ This list focuses on tools and workflows where AI plays a central role in the de
 ## Monitoring & Cost Tracking
 
 * [Budi](https://github.com/siropkin/budi) — Local-first cost analytics for AI coding agents. Tracks token usage and spend across Claude Code and Cursor.
+
+---
+
+## Security
+
+AI-generated apps often ship with exposed secrets, open databases, or missing security headers. These tools catch issues before you go live.
+
+* [Vibeproof](https://vibeproof.sh/) — Instant security scan for vibe-coded apps (Lovable, Bolt, v0, Cursor). Paste a URL or a public GitHub repo to find exposed secrets, open Supabase/Firebase databases, leaked files, vulnerable libraries, and GDPR gaps. Free scan, no signup.
+* [Snyk](https://snyk.io/) — Free-tier developer security platform that scans your code, dependencies, and IaC for known vulnerabilities.
+* [Mozilla HTTP Observatory](https://developer.mozilla.org/en-US/observatory) — Free website scan that grades your security headers (CSP, HSTS, and more) and explains how to fix them.
 
 ---
 
