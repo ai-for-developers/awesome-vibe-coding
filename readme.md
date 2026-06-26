@@ -82,6 +82,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 
 * [VibeCode](https://www.vibecodeapp.com/) — A mobile-first app creator powered by AI.
 * [IM.codes](https://github.com/im4codes/imcodes) — Mobile/web control layer for Claude Code, Codex, Gemini CLI, and other terminal-based coding agents.
+* [VibeKit.bot](https://vibekit.bot/) — A persistent AI agent that builds, deploys, and maintains full-stack apps for you, driven from your phone. The agent runs on hosted containers and ships each app to a live URL; bring-your-own-key for Claude/OpenAI. Native iOS + web.
 
 ---
 
