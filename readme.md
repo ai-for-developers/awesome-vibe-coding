@@ -115,6 +115,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 
 * [claude-code](https://github.com/anthropics/claude-code) — Works across codebases, provides explanations, automates tasks.
 * [memov](https://github.com/memovai/memov) — Git-based, traceable memory layer for Claude Code.
+* [Tree Ring Memory](https://github.com/TerminallyLazy/Tree-Ring-Memory) — Framework-agnostic Rust CLI memory layer for AI coding agents, with local recall, forgetting, audit, and TUI workflows.
 * [aider](https://aider.chat/) — Code side-by-side with AI from your terminal.
 * [Goose](https://block.github.io/goose/) — Local agent framework compatible with multiple models.
 * [MyCoder.ai](https://github.com/drivecore/mycoder) — Modular agent with GitHub integration.
