@@ -136,6 +136,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [Boomerang Tasks](https://docs.roocode.com/features/boomerang-tasks) — Automatically turns big ideas into task queues.
 * [Claude Task Master](https://github.com/eyaltoledano/claude-task-master) — Compatible with popular AI IDEs, breaks down work into subtasks.
 * [agent-hub](https://github.com/Dominic789654/agent-hub) — Local-first multitask board for routing, sequencing, and observing repo-local coding agents across projects.
+* [DevIntern](https://devintern.com/) — Picks up tickets from Jira, Linear, Trello, Asana, Azure DevOps, GitHub Issues, or markdown files and turns them into self-reviewed pull requests using the coding agent of your choice (Claude Code, Codex, Cursor, Gemini CLI, and others), on your machines with your own model keys.
 
 ---
 
