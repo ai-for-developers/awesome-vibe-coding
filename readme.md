@@ -108,7 +108,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 
 * [Dyad](https://www.dyad.sh/) — A lightweight, local platform for creating AI-driven apps without depending on the cloud.
 * [ClaudeCode Launchpad CLI](https://github.com/noambrand/kivun-terminal) — Windows & macOS installer and launcher for Claude Code. 2-minute setup: auto-installs Node.js, Git & Claude Code; adds a live two-line status bar (model, context %, usage limits), desktop shortcut with folder picker, and right-click "Open with ClaudeCode Launchpad CLI" context menu on Windows folders.
-* [Agent Island](https://github.com/tristan666666/agent-island) — Native macOS notch companion for Claude/Codex sessions that shows live run state and can auto-resume a selected long-running task after the limit window resets.
+* [Agent Island](https://github.com/tristan666666/agent-island) — Open-source status companion for Claude Code and Codex with live session state, your-turn alerts, and local monitoring on macOS and Windows.
 
 ---
 
