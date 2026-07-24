@@ -155,6 +155,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 
 ## Articles & Updates
 
+* [Agentic Coding Trends 2026](https://agentic-coder.de/studien/agentic-coding-trends-2026) — Daily open dataset tracking 40 active coding-agent repositories, with transparent methodology and JSON/CSV downloads.
 * [Prompt Engineering for Developers](https://addyo.substack.com/p/the-prompt-engineering-playbook-for)
 * [What Vibe Coding Actually Means](https://theconversation.com/what-is-vibe-coding-a-computer-scientist-explains-what-it-means-to-have-ai-write-computer-code-and-what-risks-that-can-entail-257172)
 * [LLM Pair Programming](https://pmbanugo.me/blog/peer-programming-with-llms)
