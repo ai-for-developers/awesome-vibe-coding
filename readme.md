@@ -75,6 +75,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [Cursor](https://www.cursor.com/) — One of the most advanced AI-first code editors.
 * [Zed](https://zed.dev/) — Built for real-time team collaboration with AI assistance.
 * [Amazon Kiro](https://kiro.dev) — An AI-powered IDE from prototype to production.
+* [CUT3](https://cut3.ai) — Applies the vibe coding loop to video editing: prompt an agent to rewrite the timeline, then review the diff before it lands.
 
 ---
 
