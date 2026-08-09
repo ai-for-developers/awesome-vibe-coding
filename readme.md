@@ -141,6 +141,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 
 ## Monitoring & Cost Tracking
 
+* [Boost](https://boost.jfrog.com/) — Free CLI that filters terminal and CI output before it reaches Cursor, Claude Code, and Codex, typically reducing log tokens by 60–90%, with reversible retrieval and local performance reports.
 * [Budi](https://github.com/siropkin/budi) — Local-first cost analytics for AI coding agents. Tracks token usage and spend across Claude Code and Cursor.
 
 ---
