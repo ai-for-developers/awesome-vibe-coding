@@ -60,6 +60,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [Firebase Studio](https://studio.firebase.google.com/) — Google's take on agent-driven full-stack development.
 * [Napkins](https://www.napkins.dev/) — Converts mockups or screenshots into working code.
 * [HeroUI Chat](https://heroui.chat/) — Build interfaces without design expertise.
+* [HorizonX](https://horizonx.so/) — A UI and code library with Figma assets, React and Tailwind components, and templates for AI-assisted frontend workflows.
 * [Rocket.new](https://www.rocket.new/) — Low-code experience for shipping apps.
 * [embedible.io](https://embedible.io/) - AI that transforms your electronics ideas into working projects.
 * [FlyPloy](https://flyploy.com/en) — A modern application deployment platform that simplifies global delivery with one-click deploys, Docker, and Kubernetes support. Ideal for launching AI-assisted applications in seconds.
