@@ -98,6 +98,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [Superdesign](https://www.superdesign.dev/) — AI design agent for fast UI iterations.
 * [toprank](https://github.com/nowork-studio/toprank) — Open-source Claude Code plugin with 9 SEO and Google Ads skills. Connects Google Search Console, PageSpeed Insights, and Google Ads API; ships meta tag and schema markup fixes to WordPress/Strapi/Contentful/Ghost. MIT, 107⭐.
 * [dbForge AI Assistant](https://www.devart.com/dbforge/ai-assistant/) - Integrated AI tool that generates, optimizes, explains, and fixes SQL queries. 
+* [Forge Design](https://github.com/forge-ui/forge-design-extension) — Chrome extension with a local Grok bridge: pick or place a component on the live page and edit the UI. Page data stays on-device.
 * [Frontman](https://github.com/frontman-ai/frontman) — Open-source AI agent that lives in your browser — click any element, describe changes in plain English, and get real code edits with hot reload. Works with Next.js, Vite, and Astro.
 * [Mysti](https://github.com/DeepMyst/Mysti) - Multi-agent AI coding assistant for VS Code with brainstorm mode. Supports Claude Code, Codex, Gemini, Cline, and GitHub Copilot.
 * [AgentLint](https://github.com/0xmariowu/AgentLint) — 33 evidence-backed checks for AI-friendly repos — file structure, instruction quality, build setup, session continuity, security posture. Claude Code plugin.
