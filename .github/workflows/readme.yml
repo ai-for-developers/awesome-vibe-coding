@@ -3,9 +3,12 @@ name: Generate Awesome README
 on:
   push:
     branches:
-      - list
-    paths-ignore:
-      - "README.md"
+      - main
+    paths:
+      - "content/**"
+      - "scripts/generate_readme.py"
+      - "LICENSE"
+  workflow_dispatch: {}
 
 permissions:
   contents: write
@@ -25,8 +28,17 @@ jobs:
       - name: Generate README.md
         run: python3 scripts/generate_readme.py
 
-      - name: Commit and push
-        uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Stage list branch contents
+        run: |
+          mkdir -p _list_dist
+          cp README.md _list_dist/README.md
+          cp LICENSE _list_dist/LICENSE
+
+      - name: Publish to list branch
+        uses: peaceiris/actions-gh-pages@v4
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_list_dist
+          publish_branch: list
+          force_orphan: true
           commit_message: "chore: regenerate Awesome Vibe Coding README"
-          file_pattern: "README.md"
