@@ -1,0 +1,20 @@
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="{{ "/" | relLangURL }}" class="site-logo"><img src="{{ "logo.svg" | relURL }}" alt="" width="22" height="15" class="logo-mark">Vibe Coding</a>
+    <nav class="site-nav" id="site-nav">
+      {{ range site.Menus.main.ByWeight }}
+        <a href="{{ .URL }}" {{ if $.IsMenuCurrent "main" . }}class="active"{{ else if $.HasMenuCurrent "main" . }}class="active"{{ end }}>{{ partial "nav-icon.html" .Name }}{{ .Name }}</a>
+      {{ end }}
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<script>
+  document.getElementById('nav-toggle').addEventListener('click', function () {
+    var nav = document.getElementById('site-nav');
+    var open = nav.classList.toggle('open');
+    this.setAttribute('aria-expanded', open);
+  });
+</script>

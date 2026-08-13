@@ -1,0 +1,32 @@
+{{ define "main" }}
+
+<section class="single-head wrap">
+  <a href="{{ "/resources" | relLangURL }}" class="back-link">All resources</a>
+  <div class="kicker">
+    {{ with .Params.category }}<span class="badge">{{ . }}</span>{{ end }}
+  </div>
+  <h1>{{ .Title }}</h1>
+  {{ with .Description }}<p class="lede" style="color:var(--text-muted); font-size:1.1rem; max-width:60ch;">{{ . }}</p>{{ end }}
+</section>
+
+<section class="single-body wrap">
+  {{ with .Params.website }}
+  <div class="tool-meta-box">
+    <div style="color:var(--text-muted); font-size:0.95rem;">External resource</div>
+    <a href="{{ . }}" class="btn" target="_blank" rel="noopener noreferrer nofollow">Visit ↗</a>
+  </div>
+  {{ end }}
+
+  {{ .Content }}
+
+  {{ with .Params.tags }}
+  <hr>
+  <div class="tag-list">
+    {{ range . }}
+    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="tag-pill">{{ . }}</a>
+    {{ end }}
+  </div>
+  {{ end }}
+</section>
+
+{{ end }}

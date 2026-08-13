@@ -1,0 +1,64 @@
+baseURL = "https://vibecoding.rest/"
+title = "Vibe Coding"
+
+enableRobotsTXT = true
+summarylength = 30
+
+[pagination]
+  pagerSize = 12
+
+[taxonomies]
+  series = "series"
+  category = "category"
+  tag = "tags"
+
+[params]
+  description = "A directory of tools, top-tier coding models, MCP servers, skills, and resources, plus a blog and dictionary for mastering vibecoding — the practice of building software by collaborating with AI."
+  author = "Vibe Coding"
+
+[[menus.main]]
+  name = "Tools"
+  pageRef = "/tools"
+  weight = 10
+
+[[menus.main]]
+  name = "Models"
+  pageRef = "/models"
+  weight = 15
+
+[[menus.main]]
+  name = "MCP Servers"
+  pageRef = "/mcp-servers"
+  weight = 20
+
+[[menus.main]]
+  name = "Skills"
+  pageRef = "/skills"
+  weight = 30
+
+[[menus.main]]
+  name = "Resources"
+  pageRef = "/resources"
+  weight = 40
+
+[[menus.main]]
+  name = "Blog"
+  pageRef = "/posts"
+  weight = 50
+
+[[menus.main]]
+  name = "Dictionary"
+  pageRef = "/dictionary"
+  weight = 60
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]

@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+<section class="page-head wrap">
+  <div class="kicker">{{ .Data.Plural | title }}</div>
+  <h1>{{ .Title }}</h1>
+</section>
+
+<section class="list-section wrap">
+  <ul class="post-list">
+    {{ range .Pages.ByTitle }}
+    <li class="post-item">
+      <div class="post-item-main">
+        <h3><a href="{{ .Permalink }}" class="underline-link">{{ .Title }}</a></h3>
+        <p>{{ .Description | default .Summary | plainify | truncate 140 }}</p>
+      </div>
+      <div class="meta">{{ .Section | title }}</div>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+
+{{ end }}

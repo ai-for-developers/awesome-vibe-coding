@@ -1,0 +1,61 @@
+{{ define "main" }}
+
+<section class="single-head wrap">
+  <a href="{{ "/posts" | relLangURL }}" class="back-link">All articles</a>
+  <div class="kicker">
+    {{ with .Params.series }}<span class="badge">{{ index . 0 }}</span>{{ end }}
+  </div>
+  <h1>{{ .Title }}</h1>
+  <div class="single-meta">
+    <span>{{ .Date.Format "January 2, 2006" }}</span>
+    <span>{{ .ReadingTime }} min read</span>
+    {{ with .Params.series }}<span>Part of &ldquo;{{ index . 0 }}&rdquo;</span>{{ end }}
+  </div>
+</section>
+
+<section class="single-body wrap">
+  {{ .Content }}
+
+  {{ with .Params.tags }}
+  <hr>
+  <div class="tag-list">
+    {{ range . }}
+    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="tag-pill">{{ . }}</a>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  {{ with .Params.series }}
+    {{ $seriesName := index . 0 }}
+    {{ $siblings := slice }}
+    {{ range site.RegularPages }}
+      {{ $p := . }}
+      {{ with .Params.series }}
+        {{ if eq (index . 0) $seriesName }}
+          {{ $siblings = $siblings | append $p }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ $siblings = sort $siblings "Params.series_order" "asc" }}
+    {{ if gt (len $siblings) 1 }}
+    <div class="term-nav">
+      {{ $prev := "" }}
+      {{ $next := "" }}
+      {{ range $i, $p := $siblings }}
+        {{ if eq $p.RelPermalink $.RelPermalink }}
+          {{ if gt $i 0 }}{{ $prev = index $siblings (sub $i 1) }}{{ end }}
+          {{ if lt $i (sub (len $siblings) 1) }}{{ $next = index $siblings (add $i 1) }}{{ end }}
+        {{ end }}
+      {{ end }}
+      <div class="prev">
+        {{ if $prev }}<span class="lbl">Previous</span><a href="{{ $prev.Permalink }}">{{ $prev.Title }}</a>{{ end }}
+      </div>
+      <div class="next">
+        {{ if $next }}<span class="lbl">Next</span><a href="{{ $next.Permalink }}">{{ $next.Title }}</a>{{ end }}
+      </div>
+    </div>
+    {{ end }}
+  {{ end }}
+</section>
+
+{{ end }}

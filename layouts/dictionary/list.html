@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+<section class="page-head wrap">
+  <div class="page-head-row">
+    <div class="page-head-icon">{{ partial "nav-icon.html" "Dictionary" }}</div>
+    <div>
+      <div class="kicker">Glossary</div>
+      <h1>{{ .Title }}</h1>
+      <p>{{ .Description | default site.Params.description }}</p>
+    </div>
+  </div>
+</section>
+
+{{ $pages := .Pages.ByTitle }}
+{{ $letters := slice }}
+{{ range $pages }}
+  {{ $letter := upper (substr .Title 0 1) }}
+  {{ $letters = $letters | append $letter }}
+{{ end }}
+{{ $letters = $letters | uniq }}
+
+<nav class="dict-index wrap">
+  {{ range $letters }}
+  <a href="#letter-{{ . }}">{{ . }}</a>
+  {{ end }}
+</nav>
+
+<section class="list-section wrap">
+  {{ range $letters }}
+  {{ $letter := . }}
+  <div class="dict-letter-group" id="letter-{{ $letter }}">
+    <div class="dict-letter">{{ $letter }}</div>
+    <dl>
+      {{ range $pages }}
+        {{ if eq (upper (substr .Title 0 1)) $letter }}
+        <div class="dict-term">
+          <dt><a href="{{ .Permalink }}" class="underline-link">{{ .Title }}</a></dt>
+          <dd>{{ .Description | default .Summary | plainify | truncate 160 }}</dd>
+        </div>
+        {{ end }}
+      {{ end }}
+    </dl>
+  </div>
+  {{ end }}
+</section>
+
+{{ end }}

@@ -1,0 +1,83 @@
+{{ define "main" }}
+
+<section class="page-head wrap">
+  <div class="page-head-row">
+    <div class="page-head-icon">{{ partial "nav-icon.html" "Blog" }}</div>
+    <div>
+      <div class="kicker">Field notes</div>
+      <h1>{{ .Title }}</h1>
+      <p>{{ .Description | default site.Params.description }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="list-section wrap">
+  {{ $pages := .Pages }}
+
+  {{ $seriesNames := slice }}
+  {{ range $pages }}
+    {{ with .Params.series }}
+      {{ $seriesNames = $seriesNames | append (index . 0) }}
+    {{ end }}
+  {{ end }}
+  {{ $seriesNames = $seriesNames | uniq | sort }}
+
+  {{ $inSeriesFlat := slice }}
+  {{ range $seriesNames }}
+    {{ $seriesName := . }}
+    {{ $seriesPages := slice }}
+    {{ range $pages }}
+      {{ $page := . }}
+      {{ with .Params.series }}
+        {{ if eq (index . 0) $seriesName }}
+          {{ $seriesPages = $seriesPages | append $page }}
+          {{ $inSeriesFlat = $inSeriesFlat | append $page }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ if gt (len $seriesPages) 0 }}
+      {{ $seriesPages = sort $seriesPages "Params.series_order" "asc" }}
+      <div class="series-group">
+        <div class="series-group-title">Series — {{ $seriesName }}</div>
+        <ul class="post-list">
+          {{ range $seriesPages }}
+          <li class="post-item">
+            <div class="post-item-main">
+              <h3><a href="{{ .Permalink }}" class="underline-link">{{ .Title }}</a></h3>
+              <p>{{ .Description | default .Summary | plainify | truncate 140 }}</p>
+            </div>
+            <div class="meta">{{ .Date.Format "Jan 2, 2006" }}</div>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    {{ end }}
+  {{ end }}
+
+  {{ $standalone := slice }}
+  {{ range $pages }}
+    {{ if not (in $inSeriesFlat .) }}
+      {{ $standalone = $standalone | append . }}
+    {{ end }}
+  {{ end }}
+  {{ $standalone = sort $standalone "Date" "desc" }}
+
+  {{ if gt (len $standalone) 0 }}
+  <div class="series-group">
+    <div class="series-group-title">More articles</div>
+    <ul class="post-list">
+      {{ range $standalone }}
+      <li class="post-item">
+        <div class="post-item-main">
+          <h3><a href="{{ .Permalink }}" class="underline-link">{{ .Title }}</a></h3>
+          <p>{{ .Description | default .Summary | plainify | truncate 140 }}</p>
+        </div>
+        <div class="meta">{{ .Date.Format "Jan 2, 2006" }}</div>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }}
+</section>
+
+{{ end }}

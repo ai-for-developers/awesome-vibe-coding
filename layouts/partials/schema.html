@@ -1,0 +1,94 @@
+{{/* JSON-LD structured data, assembled as a single @graph per page. */}}
+{{ $page := .page }}
+{{ $description := .description }}
+{{ $graph := slice }}
+
+{{ if $page.IsHome }}
+  {{ $graph = $graph | append (dict
+        "@type" "WebSite"
+        "@id" (printf "%s#website" site.BaseURL)
+        "url" site.BaseURL
+        "name" site.Title
+        "description" $description
+  ) }}
+  {{ $graph = $graph | append (dict
+        "@type" "Organization"
+        "@id" (printf "%s#organization" site.BaseURL)
+        "url" site.BaseURL
+        "name" site.Title
+        "logo" (dict "@type" "ImageObject" "url" ("logo.svg" | absURL))
+  ) }}
+{{ end }}
+
+{{ if not $page.IsHome }}
+  {{ $items := slice (dict "@type" "ListItem" "position" 1 "name" "Home" "item" site.BaseURL) }}
+  {{ $pos := 2 }}
+  {{ range $page.Ancestors.Reverse }}
+    {{ if not .IsHome }}
+      {{ $items = $items | append (dict "@type" "ListItem" "position" $pos "name" .Title "item" .Permalink) }}
+      {{ $pos = add $pos 1 }}
+    {{ end }}
+  {{ end }}
+  {{ $items = $items | append (dict "@type" "ListItem" "position" $pos "name" $page.Title "item" $page.Permalink) }}
+  {{ $graph = $graph | append (dict "@type" "BreadcrumbList" "itemListElement" $items) }}
+{{ end }}
+
+{{ if eq $page.Kind "section" }}
+  {{ $listItems := slice }}
+  {{ $i := 0 }}
+  {{ range $page.Pages }}
+    {{ $i = add $i 1 }}
+    {{ $listItems = $listItems | append (dict "@type" "ListItem" "position" $i "url" .Permalink "name" .Title) }}
+  {{ end }}
+  {{ if gt (len $listItems) 0 }}
+    {{ $graph = $graph | append (dict "@type" "ItemList" "name" $page.Title "itemListElement" $listItems) }}
+  {{ end }}
+{{ end }}
+
+{{ if eq $page.Kind "page" }}
+  {{ $section := $page.Section }}
+  {{ if in (slice "tools" "mcp-servers" "skills") $section }}
+    {{ $app := dict
+          "@type" "SoftwareApplication"
+          "name" $page.Title
+          "description" $description
+          "url" $page.Permalink
+          "applicationCategory" "DeveloperApplication"
+    }}
+    {{ with $page.Params.website }}{{ $app = merge $app (dict "sameAs" .) }}{{ end }}
+    {{ with $page.Params.category }}{{ $app = merge $app (dict "applicationSubCategory" .) }}{{ end }}
+    {{ $graph = $graph | append $app }}
+  {{ else if eq $section "resources" }}
+    {{ $graph = $graph | append (dict
+          "@type" "CreativeWork"
+          "name" $page.Title
+          "description" $description
+          "url" $page.Permalink
+    ) }}
+  {{ else if eq $section "posts" }}
+    {{ $graph = $graph | append (dict
+          "@type" "BlogPosting"
+          "headline" $page.Title
+          "description" $description
+          "url" $page.Permalink
+          "datePublished" ($page.Date.Format "2006-01-02T15:04:05Z07:00")
+          "dateModified" ($page.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+          "author" (dict "@type" "Organization" "name" site.Title "url" site.BaseURL)
+          "publisher" (dict "@type" "Organization" "name" site.Title "logo" (dict "@type" "ImageObject" "url" ("logo.svg" | absURL)))
+          "mainEntityOfPage" $page.Permalink
+    ) }}
+  {{ else if eq $section "dictionary" }}
+    {{ $graph = $graph | append (dict
+          "@type" "DefinedTerm"
+          "name" $page.Title
+          "description" $description
+          "url" $page.Permalink
+    ) }}
+  {{ end }}
+{{ end }}
+
+{{ if gt (len $graph) 0 }}
+<script type="application/ld+json">
+{{ jsonify (dict "@context" "https://schema.org" "@graph" $graph) | safeJS }}
+</script>
+{{ end }}

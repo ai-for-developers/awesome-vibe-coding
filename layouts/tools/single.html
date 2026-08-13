@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+<section class="single-head wrap">
+  <a href="{{ "/tools" | relLangURL }}" class="back-link">All tools</a>
+  <div class="kicker">
+    {{ with .Params.category }}<span class="badge">{{ . }}</span>{{ end }}
+  </div>
+  <div class="single-title-row">
+    {{ with .Params.website }}<img class="tool-icon tool-icon-lg" src="https://www.google.com/s2/favicons?domain={{ urlquery . }}&sz=128" alt="" loading="lazy">{{ end }}
+    <h1>{{ .Title }}</h1>
+  </div>
+  {{ with .Description }}<p class="lede" style="color:var(--text-muted); font-size:1.1rem; max-width:60ch;">{{ . }}</p>{{ end }}
+</section>
+
+<section class="single-body wrap">
+  {{ if or .Params.website .Params.pricing }}
+  <div class="tool-meta-box">
+    <div>
+      {{ with .Params.pricing }}<div class="lbl" style="font-size:0.78rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-faint); margin-bottom:0.3em;">Pricing</div><div style="font-weight:600;">{{ . }}</div>{{ end }}
+    </div>
+    {{ with .Params.website }}<a href="{{ . }}" class="btn" target="_blank" rel="noopener noreferrer nofollow">Visit site ↗</a>{{ end }}
+  </div>
+  {{ end }}
+
+  {{ .Content }}
+
+  {{ with .Params.tags }}
+  <hr>
+  <div class="tag-list">
+    {{ range . }}
+    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="tag-pill">{{ . }}</a>
+    {{ end }}
+  </div>
+  {{ end }}
+</section>
+
+{{ end }}

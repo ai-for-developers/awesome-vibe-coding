@@ -1,0 +1,46 @@
+{{ define "main" }}
+
+<section class="single-head wrap">
+  <a href="{{ "/dictionary" | relLangURL }}" class="back-link">All terms</a>
+  <div class="kicker">Dictionary</div>
+  <h1>{{ .Title }}</h1>
+  {{ with .Description }}<p class="lede" style="color:var(--text-muted); font-size:1.1rem; max-width:60ch;">{{ . }}</p>{{ end }}
+</section>
+
+<section class="single-body wrap">
+  {{ .Content }}
+
+  {{ with .Params.related }}
+  <hr>
+  <h3 style="margin-top:0;">Related terms</h3>
+  <div class="tag-list">
+    {{ range . }}
+      {{ $slug := . }}
+      {{ with site.GetPage (printf "/dictionary/%s" $slug) }}
+      <a href="{{ .Permalink }}" class="tag-pill">{{ .Title }}</a>
+      {{ end }}
+    {{ end }}
+  </div>
+  {{ end }}
+
+  {{ $all := where site.RegularPages "Section" "dictionary" }}
+  {{ $all = $all.ByTitle }}
+  {{ $prev := "" }}
+  {{ $next := "" }}
+  {{ range $i, $p := $all }}
+    {{ if eq $p.RelPermalink $.RelPermalink }}
+      {{ if gt $i 0 }}{{ $prev = index $all (sub $i 1) }}{{ end }}
+      {{ if lt $i (sub (len $all) 1) }}{{ $next = index $all (add $i 1) }}{{ end }}
+    {{ end }}
+  {{ end }}
+  <div class="term-nav">
+    <div class="prev">
+      {{ if $prev }}<span class="lbl">Previous</span><a href="{{ $prev.Permalink }}">{{ $prev.Title }}</a>{{ end }}
+    </div>
+    <div class="next">
+      {{ if $next }}<span class="lbl">Next</span><a href="{{ $next.Permalink }}">{{ $next.Title }}</a>{{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}

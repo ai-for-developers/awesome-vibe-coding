@@ -1,0 +1,74 @@
+{{ define "main" }}
+
+<section class="page-head wrap-wide">
+  <div class="page-head-row">
+    <div class="page-head-icon">{{ partial "nav-icon.html" "Tools" }}</div>
+    <div>
+      <h1>{{ .Title }}</h1>
+      <p>{{ .Description | default site.Params.description }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="list-section wrap-wide">
+  {{ $pages := .Pages }}
+  {{ $categories := slice }}
+  {{ range $pages }}
+    {{ with .Params.category }}{{ $categories = $categories | append . }}{{ end }}
+  {{ end }}
+  {{ $categories = $categories | uniq | sort }}
+
+  <div class="filter-bar" data-filter-bar>
+    <span class="filter-chip active" data-filter="*"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>All</span>
+    {{ range $categories }}
+    <span class="filter-chip" data-filter="{{ . | urlize }}">{{ partial "tool-category-icon.html" . }}{{ . }}</span>
+    {{ end }}
+  </div>
+
+  {{ $ranked := slice }}
+  {{ range $pages }}
+    {{ $rank := .Params.rank | default 0 }}
+    {{ $sortKey := printf "%02d-%s" (sub 10 $rank) (.Title | lower) }}
+    {{ $ranked = $ranked | append (dict "page" . "sortKey" $sortKey) }}
+  {{ end }}
+  {{ $ranked = sort $ranked "sortKey" }}
+
+  <div class="tools-grid" data-tools-grid>
+    {{ range $ranked }}
+    {{ $page := .page }}
+    <a href="{{ $page.Permalink }}" class="tool-card" data-cat="{{ $page.Params.category | urlize }}">
+      <div class="tool-card-top">
+        {{ with $page.Params.website }}<img class="tool-icon tool-icon-card" src="https://www.google.com/s2/favicons?domain={{ urlquery . }}&sz=128" alt="" loading="lazy">{{ end }}
+        <div class="tool-card-text">
+          <h3>{{ $page.Title }}</h3>
+          {{ with $page.Params.category }}<span class="cat">{{ . }}</span>{{ end }}
+        </div>
+      </div>
+      <p>{{ $page.Description | default $page.Summary | plainify | truncate 110 }}</p>
+      <span class="visit">View tool</span>
+    </a>
+    {{ end }}
+  </div>
+</section>
+
+<script>
+(function () {
+  var bar = document.querySelector('[data-filter-bar]');
+  var grid = document.querySelector('[data-tools-grid]');
+  if (!bar || !grid) return;
+  var chips = bar.querySelectorAll('.filter-chip');
+  var cards = grid.querySelectorAll('.tool-card');
+  bar.addEventListener('click', function (e) {
+    var chip = e.target.closest('.filter-chip');
+    if (!chip) return;
+    chips.forEach(function (c) { c.classList.remove('active'); });
+    chip.classList.add('active');
+    var filter = chip.getAttribute('data-filter');
+    cards.forEach(function (card) {
+      card.style.display = (filter === '*' || card.getAttribute('data-cat') === filter) ? '' : 'none';
+    });
+  });
+})();
+</script>
+
+{{ end }}

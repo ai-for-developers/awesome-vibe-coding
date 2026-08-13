@@ -1,0 +1,103 @@
+{{ define "main" }}
+
+<section class="hero">
+  <div class="wrap-wide">
+    <div class="kicker">Vibecoding, mapped</div>
+    <h1>The map for building software with AI.</h1>
+    <p class="lede">Directories of tools, MCP servers, skills, and resources, a running series of field notes, and a plain-language dictionary — everything you need to actually get good at vibecoding.</p>
+  </div>
+</section>
+
+<section class="wrap-wide">
+  <div class="pillars">
+    <a href="{{ "/tools" | relLangURL }}" class="pillar">
+      <div class="num">01 — Directory</div>
+      <h3>Tools</h3>
+      <p>A curated directory of AI coding assistants, agents, and editors — sorted by what they're actually good at.</p>
+      <div class="go">Browse tools</div>
+    </a>
+    <a href="{{ "/models" | relLangURL }}" class="pillar">
+      <div class="num">02 — Directory</div>
+      <h3>Models</h3>
+      <p>The top-tier LLMs coders are actually using — context windows, per-token pricing, and what each one is best at.</p>
+      <div class="go">Browse models</div>
+    </a>
+    <a href="{{ "/mcp-servers" | relLangURL }}" class="pillar">
+      <div class="num">03 — Directory</div>
+      <h3>MCP Servers</h3>
+      <p>The Model Context Protocol connectors that give agents access to real tools and data — filesystems, databases, GitHub, and more.</p>
+      <div class="go">Browse MCP servers</div>
+    </a>
+    <a href="{{ "/skills" | relLangURL }}" class="pillar">
+      <div class="num">04 — Directory</div>
+      <h3>Skills</h3>
+      <p>Packaged, reusable capabilities that extend what an agent can reliably do — document handling, design, testing, and more.</p>
+      <div class="go">Browse skills</div>
+    </a>
+    <a href="{{ "/resources" | relLangURL }}" class="pillar">
+      <div class="num">05 — Directory</div>
+      <h3>Resources</h3>
+      <p>Guides, blogs, communities, and learning material for going deeper on vibecoding beyond this site.</p>
+      <div class="go">Browse resources</div>
+    </a>
+    <a href="{{ "/posts" | relLangURL }}" class="pillar">
+      <div class="num">06 — Field notes</div>
+      <h3>Blog</h3>
+      <p>Series-based articles on workflows, prompting patterns, and lessons from building real projects with AI.</p>
+      <div class="go">Read the blog</div>
+    </a>
+    <a href="{{ "/dictionary" | relLangURL }}" class="pillar">
+      <div class="num">07 — Glossary</div>
+      <h3>Dictionary</h3>
+      <p>Plain-language definitions for vibecoding concepts — from "context window" to "agentic loop."</p>
+      <div class="go">Look up a term</div>
+    </a>
+  </div>
+</section>
+
+{{ $posts := where site.RegularPages "Section" "posts" }}
+{{ $posts = $posts.ByDate.Reverse }}
+{{ if gt (len $posts) 0 }}
+<section class="home-section wrap-wide">
+  <div class="home-section-head">
+    <h2>Latest from the blog</h2>
+    <a href="{{ "/posts" | relLangURL }}">View all →</a>
+  </div>
+  <ul class="post-list">
+    {{ range first 3 $posts }}
+    <li class="post-item">
+      <div class="post-item-main">
+        {{ with .Params.series }}<span class="badge">{{ index . 0 }}</span><br>{{ end }}
+        <h3><a href="{{ .Permalink }}" class="underline-link">{{ .Title }}</a></h3>
+        <p>{{ .Description | default .Summary | plainify | truncate 130 }}</p>
+      </div>
+      <div class="meta">{{ .Date.Format "Jan 2, 2006" }}</div>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}
+
+{{ $tools := where site.RegularPages "Section" "tools" }}
+{{ if gt (len $tools) 0 }}
+<section class="home-section wrap-wide">
+  <div class="home-section-head">
+    <h2>Featured tools</h2>
+    <a href="{{ "/tools" | relLangURL }}">View all →</a>
+  </div>
+  <div class="tools-grid">
+    {{ range first 3 $tools }}
+    <a href="{{ .Permalink }}" class="tool-card">
+      <div class="tool-card-top">
+        <h3>{{ .Title }}</h3>
+        {{ with .Params.category }}<span class="cat">{{ . }}</span>{{ end }}
+      </div>
+      <p>{{ .Description | default .Summary | plainify | truncate 100 }}</p>
+      <span class="visit">View tool</span>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ end }}

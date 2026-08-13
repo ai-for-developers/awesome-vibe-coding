@@ -1,0 +1,61 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{{ $title := "" }}
+{{ if .IsHome }}
+  {{ $title = printf "%s — Tools, Blog & Dictionary for AI-Assisted Coding" site.Title }}
+{{ else }}
+  {{ $title = printf "%s · %s" .Title site.Title }}
+{{ end }}
+
+{{ $description := .Description }}
+{{ if not $description }}
+  {{ if eq .Kind "term" }}
+    {{ $description = printf "Everything tagged %q in Vibe Coding's directory of tools, models, MCP servers, skills, and resources for AI-assisted coding." .Title }}
+  {{ else if eq .Kind "taxonomy" }}
+    {{ $description = printf "Browse all %s used across Vibe Coding's directory of tools, models, MCP servers, skills, and resources for AI-assisted coding." (.Data.Plural | lower) }}
+  {{ else }}
+    {{ $description = site.Params.description }}
+  {{ end }}
+{{ end }}
+
+{{ $ogImage := "og-image.png" | absURL }}
+
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $description }}">
+<link rel="canonical" href="{{ .Permalink }}">
+
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:type" content="{{ if eq .Kind "page" }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ $ogImage }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ site.Title }} — {{ site.Params.description | truncate 120 }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta name="twitter:description" content="{{ $description }}">
+<meta name="twitter:image" content="{{ $ogImage }}">
+
+<link rel="icon" type="image/svg+xml" href="{{ "logo.svg" | relURL }}">
+
+{{ with resources.Get "css/main.css" }}
+  {{ $opts := dict "targetPath" "css/main.css" }}
+  {{ if hugo.IsProduction }}
+    {{ with . | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
+    {{ end }}
+  {{ else }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+  {{ end }}
+{{ end }}
+
+{{ if .OutputFormats.Get "rss" }}
+  {{ with .OutputFormats.Get "rss" }}
+    <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .Permalink }}">
+  {{ end }}
+{{ end }}
+
+{{ partial "schema.html" (dict "page" . "description" $description) }}

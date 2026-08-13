@@ -1,0 +1,57 @@
+{{ define "main" }}
+
+<section class="page-head wrap-wide">
+  <div class="page-head-row">
+    <div class="page-head-icon">{{ partial "nav-icon.html" "Models" }}</div>
+    <div>
+      <div class="kicker">Top-tier coding LLMs</div>
+      <h1>{{ .Title }}</h1>
+      <p>{{ .Description | default site.Params.description }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="list-section wrap-wide">
+  {{ $ranked := slice }}
+  {{ range .Pages }}
+    {{ $rank := .Params.rank | default 0 }}
+    {{ $sortKey := printf "%02d-%s" (sub 10 $rank) (.Title | lower) }}
+    {{ $ranked = $ranked | append (dict "page" . "sortKey" $sortKey) }}
+  {{ end }}
+  {{ $ranked = sort $ranked "sortKey" }}
+
+  <div class="models-table-wrap">
+    <table class="models-table">
+      <thead>
+        <tr>
+          <th>Model</th>
+          <th>Provider</th>
+          <th>Context</th>
+          <th>Input / M</th>
+          <th>Output / M</th>
+          <th>Best for</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ range $ranked }}
+        {{ $page := .page }}
+        <tr>
+          <td class="models-table-name">
+            <a href="{{ $page.Permalink }}">
+              {{ with $page.Params.website }}<img class="tool-icon" src="https://www.google.com/s2/favicons?domain={{ urlquery . }}&sz=64" alt="" loading="lazy">{{ end }}
+              <span>{{ $page.Title }}</span>
+            </a>
+          </td>
+          <td>{{ $page.Params.provider }}</td>
+          <td>{{ $page.Params.context_window }}</td>
+          <td>{{ $page.Params.input_price }}</td>
+          <td>{{ $page.Params.output_price }}</td>
+          <td class="models-table-best-for">{{ $page.Params.best_for }}</td>
+        </tr>
+        {{ end }}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+{{ end }}

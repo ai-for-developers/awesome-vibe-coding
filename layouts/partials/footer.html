@@ -1,0 +1,36 @@
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="site-footer-top">
+      <div class="site-footer-brand-col">
+        <span class="site-footer-brand"><img src="{{ "logo.svg" | relURL }}" alt="" width="18" height="12" class="logo-mark">Vibe Coding</span>
+        <p class="site-footer-tagline">The map for building software with AI — tools, models, MCP servers, skills, and resources for vibecoding.</p>
+      </div>
+      <div class="site-footer-cols">
+        <div class="site-footer-col">
+          <div class="site-footer-col-title">Directory</div>
+          {{ range site.Menus.main.ByWeight }}
+            {{ if ne .Name "Blog" }}{{ if ne .Name "Dictionary" }}
+            <a href="{{ .URL }}">{{ .Name }}</a>
+            {{ end }}{{ end }}
+          {{ end }}
+        </div>
+        <div class="site-footer-col">
+          <div class="site-footer-col-title">More</div>
+          <a href="{{ "/posts" | relLangURL }}">Blog</a>
+          <a href="{{ "/dictionary" | relLangURL }}">Dictionary</a>
+          <a href="{{ "/index.xml" | relLangURL }}">RSS</a>
+        </div>
+        <div class="site-footer-col">
+          <div class="site-footer-col-title">Friends</div>
+          <a href="https://altern.ai" target="_blank" rel="noopener">Altern</a>
+          <a href="https://aifordevelopers.substack.com" target="_blank" rel="noopener">AI For Developers</a>
+          <a href="https://bestofai.io" target="_blank" rel="noopener">Best of AI</a>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer-bottom">
+      <span>&copy; {{ now.Format "2006" }} Vibe Coding</span>
+      <span>A project by <a href="https://x.com/dariubs" target="_blank" rel="noopener">Dariush Abbasi</a></span>
+    </div>
+  </div>
+</footer>

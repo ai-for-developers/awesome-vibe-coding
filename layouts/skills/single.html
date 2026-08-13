@@ -1,0 +1,34 @@
+{{ define "main" }}
+
+<section class="single-head wrap">
+  <a href="{{ "/skills" | relLangURL }}" class="back-link">All skills</a>
+  <div class="kicker">
+    {{ with .Params.category }}<span class="badge">{{ . }}</span>{{ end }}
+  </div>
+  <h1>{{ .Title }}</h1>
+  {{ with .Description }}<p class="lede" style="color:var(--text-muted); font-size:1.1rem; max-width:60ch;">{{ . }}</p>{{ end }}
+</section>
+
+<section class="single-body wrap">
+  {{ if or .Params.website .Params.platform }}
+  <div class="tool-meta-box">
+    <div>
+      {{ with .Params.platform }}<div style="font-size:0.78rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-faint); margin-bottom:0.3em;">Platform</div><div style="font-weight:600;">{{ . }}</div>{{ end }}
+    </div>
+    {{ with .Params.website }}<a href="{{ . }}" class="btn" target="_blank" rel="noopener noreferrer nofollow">View source ↗</a>{{ end }}
+  </div>
+  {{ end }}
+
+  {{ .Content }}
+
+  {{ with .Params.tags }}
+  <hr>
+  <div class="tag-list">
+    {{ range . }}
+    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="tag-pill">{{ . }}</a>
+    {{ end }}
+  </div>
+  {{ end }}
+</section>
+
+{{ end }}

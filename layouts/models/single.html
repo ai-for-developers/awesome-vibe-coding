@@ -1,0 +1,39 @@
+{{ define "main" }}
+
+<section class="single-head wrap">
+  <a href="{{ "/models" | relLangURL }}" class="back-link">All models</a>
+  <div class="kicker">
+    {{ with .Params.provider }}<span class="badge">{{ . }}</span>{{ end }}
+  </div>
+  <div class="single-title-row">
+    {{ with .Params.website }}<img class="tool-icon tool-icon-lg" src="https://www.google.com/s2/favicons?domain={{ urlquery . }}&sz=128" alt="" loading="lazy">{{ end }}
+    <h1>{{ .Title }}</h1>
+  </div>
+  {{ with .Description }}<p class="lede" style="color:var(--text-muted); font-size:1.1rem; max-width:60ch;">{{ . }}</p>{{ end }}
+</section>
+
+<section class="single-body wrap">
+  {{ if or .Params.website .Params.context_window }}
+  <div class="tool-meta-box">
+    <div class="model-meta-grid">
+      {{ with .Params.context_window }}<div><div class="lbl">Context window</div><div class="model-meta-value">{{ . }}</div></div>{{ end }}
+      {{ with .Params.input_price }}<div><div class="lbl">Input / M tokens</div><div class="model-meta-value">{{ . }}</div></div>{{ end }}
+      {{ with .Params.output_price }}<div><div class="lbl">Output / M tokens</div><div class="model-meta-value">{{ . }}</div></div>{{ end }}
+    </div>
+    {{ with .Params.website }}<a href="{{ . }}" class="btn" target="_blank" rel="noopener noreferrer nofollow">Visit site ↗</a>{{ end }}
+  </div>
+  {{ end }}
+
+  {{ .Content }}
+
+  {{ with .Params.tags }}
+  <hr>
+  <div class="tag-list">
+    {{ range . }}
+    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="tag-pill">{{ . }}</a>
+    {{ end }}
+  </div>
+  {{ end }}
+</section>
+
+{{ end }}

@@ -1,0 +1,62 @@
+{{ define "main" }}
+
+<section class="page-head wrap-wide">
+  <div class="page-head-row">
+    <div class="page-head-icon">{{ partial "nav-icon.html" "MCP Servers" }}</div>
+    <div>
+      <h1>{{ .Title }}</h1>
+      <p>{{ .Description | default site.Params.description }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="list-section wrap-wide">
+  {{ $pages := .Pages }}
+  {{ $categories := slice }}
+  {{ range $pages }}
+    {{ with .Params.category }}{{ $categories = $categories | append . }}{{ end }}
+  {{ end }}
+  {{ $categories = $categories | uniq | sort }}
+
+  <div class="filter-bar" data-filter-bar>
+    <span class="filter-chip active" data-filter="*">All</span>
+    {{ range $categories }}
+    <span class="filter-chip" data-filter="{{ . | urlize }}">{{ . }}</span>
+    {{ end }}
+  </div>
+
+  <div class="tools-grid" data-tools-grid>
+    {{ range $pages.ByTitle }}
+    <a href="{{ .Permalink }}" class="tool-card" data-cat="{{ .Params.category | urlize }}">
+      <div class="tool-card-top">
+        <h3>{{ .Title }}</h3>
+        {{ with .Params.category }}<span class="cat">{{ . }}</span>{{ end }}
+      </div>
+      <p>{{ .Description | default .Summary | plainify | truncate 110 }}</p>
+      <span class="visit">View server</span>
+    </a>
+    {{ end }}
+  </div>
+</section>
+
+<script>
+(function () {
+  var bar = document.querySelector('[data-filter-bar]');
+  var grid = document.querySelector('[data-tools-grid]');
+  if (!bar || !grid) return;
+  var chips = bar.querySelectorAll('.filter-chip');
+  var cards = grid.querySelectorAll('.tool-card');
+  bar.addEventListener('click', function (e) {
+    var chip = e.target.closest('.filter-chip');
+    if (!chip) return;
+    chips.forEach(function (c) { c.classList.remove('active'); });
+    chip.classList.add('active');
+    var filter = chip.getAttribute('data-filter');
+    cards.forEach(function (card) {
+      card.style.display = (filter === '*' || card.getAttribute('data-cat') === filter) ? '' : 'none';
+    });
+  });
+})();
+</script>
+
+{{ end }}

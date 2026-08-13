@@ -1,0 +1,32 @@
+name: Generate Awesome README
+
+on:
+  push:
+    branches:
+      - list
+    paths-ignore:
+      - "README.md"
+
+permissions:
+  contents: write
+
+jobs:
+  generate-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Generate README.md
+        run: python3 scripts/generate_readme.py
+
+      - name: Commit and push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: regenerate Awesome Vibe Coding README"
+          file_pattern: "README.md"
