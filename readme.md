@@ -113,6 +113,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 
 ## CLI Tools
 
+* [agent-qa](https://github.com/vostride/agent-qa) — Open-source self-improving QA agent that lets coding agents author and run natural-language web and mobile tests through its CLI, MCP integration, and bundled skills.
 * [claude-code](https://github.com/anthropics/claude-code) — Works across codebases, provides explanations, automates tasks.
 * [memov](https://github.com/memovai/memov) — Git-based, traceable memory layer for Claude Code.
 * [aider](https://aider.chat/) — Code side-by-side with AI from your terminal.
