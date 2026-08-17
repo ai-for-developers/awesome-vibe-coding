@@ -44,6 +44,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 ## Web-Based Builders
 
 * [Bolt.new](https://bolt.new/) — Rapidly prototype and launch web and mobile apps by prompting.
+* [BuildMuse](https://buildmuse.design/) — Curates UI, app, website, and motion references and includes an AI chat for turning rough product ideas into concise creative directions.
 * [Lovable](https://lovable.dev/) — Full-stack applications from simple ideas.
 * [Vercel’s v0](https://v0.dev/chat) — Helps design and implement UIs from natural language.
 * [Capacity](https://capacity.so/) — Create production-ready web apps in minutes.
