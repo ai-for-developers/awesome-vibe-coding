@@ -163,6 +163,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [Karpathy on Menus and Vibes](https://karpathy.bearblog.dev/vibe-coding-menugen/)
 * [Fireship: Mindset Video](https://www.youtube.com/watch?v=Tw18-4U7mts)
 * [Ars Technica on AI Development Futures](https://arstechnica.com/ai/2025/03/is-vibe-coding-with-ai-gnarly-or-reckless-maybe-some-of-both/)
+* [Choosing an AI coding tool is now a graph problem](https://dev.to/aicoolies/choosing-an-ai-coding-tool-is-now-a-graph-problem-d0d) — Why picking an AI coding stack is a graph problem, from the aicoolies catalog.
 * [The New Stack – Everyone Can Program](https://thenewstack.io/vibe-coding-where-everyone-can-speak-computer-programming/)
 * [NYTimes: Personal Vibe Coding Experience](https://www.nytimes.com/2025/02/27/technology/personaltech/vibecoding-ai-software-programming.html)
 * [CodingButVibes – What Is Vibe Coding](https://www.codingbutvibes.com/what-is-vibe-coding) — Practical breakdown of the vibe coding approach, with tool comparisons and real developer workflows.
