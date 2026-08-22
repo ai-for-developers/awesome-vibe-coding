@@ -142,6 +142,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 ## Monitoring & Cost Tracking
 
 * [Budi](https://github.com/siropkin/budi) — Local-first cost analytics for AI coding agents. Tracks token usage and spend across Claude Code and Cursor.
+* [viberank](https://viberank.app) — Public leaderboard and open dataset for AI coding spend. Reads local ccusage data across Claude Code, Codex, Gemini CLI, Copilot and OpenCode, ranks developers by measured token cost, and publishes the aggregate spend distribution via a free JSON API.
 
 ---
 
