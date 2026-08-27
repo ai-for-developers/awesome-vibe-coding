@@ -96,7 +96,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [GitHub Copilot](https://github.com/features/copilot) — Integrated assistant offering code suggestions, chats, and context-aware actions.
 * [Amazon Q](https://aws.amazon.com/q/developer) — AWS’s generative AI solution for developers.
 * [Superdesign](https://www.superdesign.dev/) — AI design agent for fast UI iterations.
-* [UIZZE](https://uizze.com/) — UI reference and anti-UI-slop toolkit for coding agents with 800,000+ real web and iOS screens, an agent skill, GitHub Action, and free MCP preview.
+* [UIZZE](https://github.com/uizze/uizze) — UI reference and anti-UI-slop toolkit for coding agents with a free Skill, a GitHub Action, and an optional authenticated MCP grounded in 800,000+ real web and iOS screens.
 * [toprank](https://github.com/nowork-studio/toprank) — Open-source Claude Code plugin with 9 SEO and Google Ads skills. Connects Google Search Console, PageSpeed Insights, and Google Ads API; ships meta tag and schema markup fixes to WordPress/Strapi/Contentful/Ghost. MIT, 107⭐.
 * [dbForge AI Assistant](https://www.devart.com/dbforge/ai-assistant/) - Integrated AI tool that generates, optimizes, explains, and fixes SQL queries. 
 * [Frontman](https://github.com/frontman-ai/frontman) — Open-source AI agent that lives in your browser — click any element, describe changes in plain English, and get real code edits with hot reload. Works with Next.js, Vite, and Astro.
