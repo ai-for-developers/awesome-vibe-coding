@@ -142,6 +142,8 @@ This list focuses on tools and workflows where AI plays a central role in the de
 ## Monitoring & Cost Tracking
 
 * [Budi](https://github.com/siropkin/budi) — Local-first cost analytics for AI coding agents. Tracks token usage and spend across Claude Code and Cursor.
+* [AICodeSlopMonitor](https://slopcodemonitor.ai/) – Detects low-quality and AI-generated code patterns to help developers review and improve codebases.
+* [SynthScan](https://github.com/marcoramilli/SynthScan) – Scans codebases for AI-generated code patterns.
 
 ---
 
