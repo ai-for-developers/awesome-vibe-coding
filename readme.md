@@ -128,6 +128,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [Bernstein](https://github.com/chernistry/bernstein) — Deterministic orchestrator for vibe coding at scale. Spawns parallel AI coding agents from a single goal, verifies with tests, auto-commits.
 * [sober-coding](https://github.com/voidborne-d/sober-coding) — Vibe code quality analyzer. 27 checks across security, architecture, duplication, error handling, dependencies, testing, and dead code. Language-agnostic with fix suggestions and CI mode.
 * [VibeGrid](https://github.com/jcanizalez/vibegrid) — Multi-agent terminal manager with task queues, workflow automation, and inline diff review.
+* [AgentBox](https://github.com/madarco/agentbox) — Run multiple coding agents (Claude Code, Codex, OpenCode) in parallel, each in its own sandboxed VM (local Docker, self-hosted, or cloud). Sub-second checkpoints; git credentials kept on the host.
 
 ---
 
