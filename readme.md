@@ -29,6 +29,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [AI-Driven Task Management](#ai-driven-task-management)
 * [Monitoring & Cost Tracking](#monitoring--cost-tracking)
 * [Project Documentation](#project-documentation)
+* [Projects Built with Vibe Coding](#projects-built-with-vibe-coding)
 * [Articles & Updates](#articles--updates)
 * [Contributing](#contributing)
 
@@ -150,6 +151,12 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [CodeGuide](https://www.codeguide.dev/) — Tool that builds documentation for AI-built projects.
 * [LynxPrompt](https://github.com/GeiserX/LynxPrompt) — Self-hostable AI config management platform for teams. Manages AGENTS.md, CLAUDE.md, .cursor/rules/, slash commands, and 30+ formats.
 * [Claude Code Mastery](https://github.com/ShipWithAI/claude-code-mastery) — Structured course for mastering Claude Code workflows, including security, automation, and multi-agent patterns.
+
+---
+
+## Projects Built with Vibe Coding
+
+* [dna-claude-analysis](https://github.com/shmlkv/dna-claude-analysis) — Personal genome analysis toolkit built entirely through conversation with Claude Code.
 
 ---
 
