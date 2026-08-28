@@ -170,6 +170,16 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [Reddit: /r/ChatGPTCoding](https://www.reddit.com/r/ChatGPTCoding/)
 * [Vibe Engineering](https://www.manning.com/books/vibe-engineering)
 
+
+## AI Testing & QA
+
+* [Playwright MCP](https://github.com/microsoft/playwright-mcp) — Enables AI agents to interact with browsers through Playwright for automated testing and debugging.
+* [Stagehand](https://github.com/browserbase/stagehand) — AI-native browser automation framework designed for reliable web testing and workflows.
+* [Bugbot](https://bugbot.com/) — AI-powered pull request reviewer focused on finding bugs before merge.
+* [Helicone](https://www.helicone.ai/) — Open-source observability platform for AI applications with logging, analytics, caching, and cost tracking.
+* [Langfuse](https://langfuse.com/) — Open-source LLM engineering platform for traces, prompts, evaluations, and observability.
+
+  
 ---
 
 ## Contributing
