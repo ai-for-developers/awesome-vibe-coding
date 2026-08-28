@@ -106,6 +106,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 
 ## Desktop & Local Apps
 
+* [Blume](https://blume.codes/) — Desktop sidecar that monitors coding-agent sessions, shows the rules, skills, and hooks shaping each run, tracks usage across Claude Code, Codex, Cursor, omp, and Pi, and keeps chat history local.
 * [Dyad](https://www.dyad.sh/) — A lightweight, local platform for creating AI-driven apps without depending on the cloud.
 * [ClaudeCode Launchpad CLI](https://github.com/noambrand/kivun-terminal) — Windows & macOS installer and launcher for Claude Code. 2-minute setup: auto-installs Node.js, Git & Claude Code; adds a live two-line status bar (model, context %, usage limits), desktop shortcut with folder picker, and right-click "Open with ClaudeCode Launchpad CLI" context menu on Windows folders.
 
