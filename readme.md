@@ -128,6 +128,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [Bernstein](https://github.com/chernistry/bernstein) — Deterministic orchestrator for vibe coding at scale. Spawns parallel AI coding agents from a single goal, verifies with tests, auto-commits.
 * [sober-coding](https://github.com/voidborne-d/sober-coding) — Vibe code quality analyzer. 27 checks across security, architecture, duplication, error handling, dependencies, testing, and dead code. Language-agnostic with fix suggestions and CI mode.
 * [VibeGrid](https://github.com/jcanizalez/vibegrid) — Multi-agent terminal manager with task queues, workflow automation, and inline diff review.
+* [codex-profile](https://github.com/yalcin/codex-profile) —  Unofficial Bash profile manager for OpenAI Codex CLI. Switch between isolated CODEX_HOME profiles while sharing sessions, memories, rules, skills, and MCP config.
 
 ---
 
