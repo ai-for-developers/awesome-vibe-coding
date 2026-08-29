@@ -120,6 +120,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 * [MyCoder.ai](https://github.com/drivecore/mycoder) — Modular agent with GitHub integration.
 * [RA.Aid](https://github.com/ai-christianson/RA.Aid) — Task-based AI built with LangGraph.
 * [CodeSelect](https://github.com/maynetee/codeselect) — Sends structured source context to LLMs.
+* [d1v](https://github.com/d1vai/d1v-cli) — CLI deployment workflow for AI-built web projects with verified previews and confirmed production releases.
 * [OpenAI Codex CLI](https://github.com/openai/codex) — Experimental terminal assistant.
 * [Gemini CLI](https://github.com/google-gemini/gemini-cli) — Terminal assistant built around Google Gemini.
 * [ReviewCerberus](https://github.com/Kirill89/reviewcerberus) - Open-source AI code review tool for analyzing git branch differences with comprehensive security, performance, and quality analysis.
