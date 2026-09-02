@@ -82,6 +82,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 
 * [VibeCode](https://www.vibecodeapp.com/) — A mobile-first app creator powered by AI.
 * [IM.codes](https://github.com/im4codes/imcodes) — Mobile/web control layer for Claude Code, Codex, Gemini CLI, and other terminal-based coding agents.
+* [Vicoa](https://vicoa.ai) — Agentic IDE and AI orchestrator for running a team of coding agents (Claude Code, Codex, OpenCode, and more) from desktop, web, or mobile, with real-time sync and push notifications.
 
 ---
 
