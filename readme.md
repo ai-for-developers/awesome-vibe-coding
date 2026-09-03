@@ -142,6 +142,7 @@ This list focuses on tools and workflows where AI plays a central role in the de
 ## Monitoring & Cost Tracking
 
 * [Budi](https://github.com/siropkin/budi) — Local-first cost analytics for AI coding agents. Tracks token usage and spend across Claude Code and Cursor.
+* [ClawMetry](https://github.com/vivekchand/clawmetry) — Self-hosted observability and kill switch for coding agents. Reads the session logs runtimes already write on disk, so there is no SDK and nothing in the request path. [Website](https://clawmetry.com)
 
 ---
 
